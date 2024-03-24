@@ -15,12 +15,12 @@ Additionally, they want to develop a recommendation system that provides persona
 By addressing this business problem, the retail company can leverage machine learning technology to segment its customer base, deliver personalized recommendations, and drive business growth through enhanced customer engagement and sales.
 
 ## Data Usage Strategy:
-Through extensive analysis we were able to answer the following research questions:
+Through extensive analysis, we were able to answer the following research questions:
 * What are the key factors influencing customer purchasing behavior and preferences? 
-* How can customer segmentation techniques (clustering algorithms) effecƟvely divide the customer base into distinct segments?
+* How can customer segmentation techniques (clustering algorithms) effectively divide the customer base into distinct segments?
 * What are the characteristics and preferences of each customer segment, and how do they 
 differ? 
-* How can content-based filtering recommendaƟons be integrated to provide more accurate and diverse recommendations to a customer based on their segment? 
+* How can content-based filtering recommendations be integrated to provide more accurate and diverse recommendations to a customer based on their segment? 
 * How can the recommendation system address the cold start problem for new users or items with limited interacƟon history?
 
 ## Procedure Overview:
@@ -35,8 +35,7 @@ Develop a recommendation system that generates personalized product recommendati
 customer segment. Implement content-based filtering to suggest products tailored to individual 
 preferences within each segment. 
 ### Model Evaluation:
-Use evaluation metrics and techniques to assess the effectiveness, relevance, and impact of your 
-recommendation system in providing personalized and engaging recommendations to users.
+Use evaluation metrics and techniques to assess your recommendation system's effectiveness, relevance, and impact in providing personalized and engaging recommendations to users.
 
 ## Expectations of the Project
 1. Improved Customer Engagement: The project aims to enhance customer engagement by 
@@ -56,13 +55,13 @@ identify distinct customer segments with unique characteristics and preferences,
 company to offer recommendations that meet the needs of each segment. 
 
 ## Correlation Analysis
-In the below image we Looking at the heatmap, we can see that there are some pairs of variables that have high correlations: 
+In the below image Looking at the heatmap, we can see that some pairs of variables have high correlations: 
 
 ![image](https://github.com/LynnsBaraka/recommendation-system/assets/143871178/09927434-3d6a-4049-bc9e-023ecf541d0d)
-This high correlations indicate that these variables move closely together, implying a degree of multicollinearity.can see that
+These high correlations indicate that these variables move closely together, implying a degree of multicollinearity you can see that
 
 ## Dimensionality Reduction(PCA)
-In the below image the plot and the cumulative explained variance values indicate how much of the total variance in the dataset is captured by each principal component, as well as the cumulative variance explained by the first n components.
+In the below image, the plot and the cumulative explained variance values indicate how much of the total variance in the dataset is captured by each principal component, as well as the cumulative variance explained by the first n components.
 
 Here, we can observe that:
 
@@ -92,7 +91,7 @@ Optimal k Value: Elbow Method Insights
 
 The optimal value of k for the KMeans clustering algorithm can be found at the elbow point. Using the YellowBrick library for the Elbow method, we observe that the suggested optimal k value is 6. 
 However, we don't have a very distinct elbow point in this case, which is common in real-world data. From the plot, we can see that the inertia continues to decrease significantly up to k=6, indicating that the optimum value of k could be between 4 and 8. 
-To choose the best k within this range, we can employ the silhouette analysis, another cluster quality evaluation method. Additionally, incorporating business insights can help determine a practical k value.
+To choose the best k within this range, we can employ silhouette analysis, another cluster quality evaluation method. Additionally, incorporating business insights can help determine a practical k value.
 
 ![image](https://github.com/LynnsBaraka/recommendation-system/assets/143871178/bccd4756-aa02-4c3e-9618-bed4cb4e3afc)
 
@@ -107,8 +106,8 @@ Using a Radar Chart Approach
 
 ![image](https://github.com/LynnsBaraka/recommendation-system/assets/143871178/e0b25492-15ca-4f74-b28b-4db5e24e1a8f)
 * Cluster 0 has a high number of total transactions and total products purchased
-* Cluster 1 has a high number of average days between purchases and days since last purchase.
-* Cluster 2 has high number of the days of the week purchased. 
+* Cluster 1 has a high number of average days between purchases and days since the last purchase.
+* Cluster 2 has a high number of the days of the week purchased. 
 
 
 ## RECOMMENDATION SYSTEM
@@ -170,7 +169,7 @@ Using a Radar Chart Approach
 8. RED TOADSTOOL LED NIGHT LIGHT
 9. PLASTERS IN TIN WOODLAND ANIMALS
 10. LUNCH BAG WOODLAND
-## Content based filtering - Recommendation based on items a user bought
+## Content-based filtering - Recommendation based on items a user bought
 ###User 12353.0 bought the following item(s):
 - NOVELTY BISCUITS CAKE STAND 3 TIER (Stock Code: 22890)
 - MINI CAKE STAND WITH HANGING CAKES (Stock Code: 37446)
@@ -185,12 +184,12 @@ Using a Radar Chart Approach
 5. ASSORTED COLOUR METAL CAT  (Stock Code: 84192)
 ## Conclusion
 1. Effective Segmentation: The use of K-means clustering along with dimensionality reduction techniques like PCA proved effective in segmenting customers based on their purchasing behavior and preferences. The clustering identified a total of three segments.
-2. Feature Engineering : The use of RFM(Recency, Frequency and Monentary) allowed us to establish customer behaviour and preferences.
-3. Recommendation System: The developed recommendation system, based on frequently bought products within each cluster and other related items to what the ustomer bought, provides personalized recommendations tailored to the preferences of individual customer segments.
-4. Cold Start: The Model used demographic information for initial recomendations for users who have not yet interacted with the system.
+2. Feature Engineering: The use of RFM(Recency, Frequency and Monentary) allowed us to establish customer behavior and preferences.
+3. Recommendation System: The developed recommendation system, based on frequently bought products within each cluster and other related items to what the customer bought, provides personalized recommendations tailored to the preferences of individual customer segments.
+4. Cold Start: The Model used demographic information for initial recommendations for users who have not yet interacted with the system.
 ## Recommendations
 1. Evaluation Metrics: Continuously monitor and evaluate the performance of the segmentation and recommendation system using relevant metrics such as customer engagement, conversion rates, and revenue growth.
-2. Cold Start Problem: Address the cold start problem for new users or items with limited interaction history by asking for more personalised information about the users as they register on the system.
+2. Cold Start Problem: Address the cold start problem for new users or items with limited interaction history by asking for more personalized information about the users as they register on the system.
 3. Feedback Mechanism: Implement a feedback mechanism to collect data on the effectiveness of recommendations and their purchases and use this feedback to continuously improve the recommendation system's performance.
 
 

@@ -7,21 +7,22 @@ Additionally, they want to develop a recommendation system that provides persona
 
 ## Objectives
 
-* Segment customers into meaningful groups based on their purchasing behavior, and other relevant factors.
-* Develop a recommendation system that suggests products tailored to the preferences and interests of each customer segment.
-* Enhance customer experience and increase sales by providing targeted and personalized recommendations.
-* Evaluate the performance of the segmentation and recommendation system through metrics such as customer engagement, conversion rates, and revenue growth.
+* To segment customers into meaningful groups based on their purchasing behavior, and other relevant factors.
+* To develop a recommendation system that suggests products tailored to the preferences and interests of each customer segment.
+* To enhance customer experience and increase sales by providing targeted and personalized recommendations.
+* To evaluate the performance of the segmentation and recommendation system through metrics such as customer engagement, conversion rates, and revenue growth.
 
 By addressing this business problem, the retail company can leverage machine learning technology to segment its customer base, deliver personalized recommendations, and drive business growth through enhanced customer engagement and sales.
 
-## Data Usage Strategy:
+## Research questions
 Through extensive analysis we were able to answer the following research questions:
-* What are the key factors influencing customer purchasing behavior and preferences? 
-* How can customer segmentation techniques (clustering algorithms) effecƟvely divide the customer base into distinct segments?
-* What are the characteristics and preferences of each customer segment, and how do they 
-differ? 
-* How can content-based filtering recommendaƟons be integrated to provide more accurate and diverse recommendations to a customer based on their segment? 
-* How can the recommendation system address the cold start problem for new users or items with limited interacƟon history?
+* How can customer segmentation techniques (clustering algorithms) effectively divide the customer base into distinct segments?
+
+* What are the characteristics and preferences of each customer segment, and how do they differ?
+
+* How can User-based collaborative Filtering and Content based Filtering be integrated to provide more accurate and diverse recommendations to a customer?
+
+* How can the recommendation system address the cold start problem for new users or items with limited interaction history?
 
 ## Procedure Overview:
 ### Data Preparation: 

@@ -85,7 +85,7 @@ Considering the context of customer segmentation, we want to retain a sufficient
 
 KMeans algorithm, I will set the init parameter to k-means++ and n_init to 10. To determine the optimal number of clusters, I will employ the elbow method and silhouette analysis. 
 Additionally, it might be beneficial to explore the use of alternative clustering algorithms such as GMM and DBSCAN in future analyses to potentially enhance the segmentation results.
-
+### Determination of the optimal number of clusters
 ## Elbow Method
 
 Optimal k Value: Elbow Method Insights
@@ -146,6 +146,43 @@ Using a Radar Chart Approach
 8. HEART OF WICKER LARGE
 9. NATURAL SLATE HEART CHALKBOARD 
 10. PAPER CHAIN KIT 50'S CHRISTMAS
+
+## Adressing cold start
+### Top Products Recommendations for Customers from the UK:
+1. WHITE HANGING HEART T-LIGHT HOLDER
+2. REGENCY CAKESTAND 3 TIER
+3. PARTY BUNTING
+4. ASSORTED COLOUR BIRD ORNAMENT
+5. SET OF 3 CAKE TINS PANTRY DESIGN 
+6. JUMBO BAG RED RETROSPOT
+7. NATURAL SLATE HEART CHALKBOARD 
+8. JAM MAKING SET WITH JARS
+9. SET OF 6 SPICE TINS PANTRY DESIGN
+10. PACK OF 72 RETROSPOT CAKE CASES
+### Top Products Recommendations for Customers not from the UK:
+1. POSTAGE
+2. ROUND SNACK BOXES SET OF4 WOODLAND 
+3. PLASTERS IN TIN CIRCUS PARADE 
+4. ROUND SNACK BOXES SET OF 4 FRUITS 
+5. REGENCY CAKESTAND 3 TIER
+6. SPACEBOY LUNCH BOX 
+7. PLASTERS IN TIN SPACEBOY
+8. RED TOADSTOOL LED NIGHT LIGHT
+9. PLASTERS IN TIN WOODLAND ANIMALS
+10. LUNCH BAG WOODLAND
+## Content based filtering - Recommendation based on items a user bought
+###User 12353.0 bought the following item(s):
+- NOVELTY BISCUITS CAKE STAND 3 TIER (Stock Code: 22890)
+- MINI CAKE STAND WITH HANGING CAKES (Stock Code: 37446)
+- CERAMIC CAKE STAND + HANGING CAKES (Stock Code: 37449)
+- CERAMIC CAKE BOWL + HANGING CAKES (Stock Code: 37450)
+
+### Recommendations for User 12353.0
+1. SWEETHEART CERAMIC TRINKET BOX (Stock Code: 21231)
+2. RED HANGING HEART T-LIGHT HOLDER (Stock Code: 21733)
+3. HANGING HEART MIRROR DECORATION  (Stock Code: 22227)
+4. MINI CAKE STAND T-LIGHT HOLDER (Stock Code: 22893)
+5. ASSORTED COLOUR METAL CAT  (Stock Code: 84192)
 ## Conclusion
 1. Effective Segmentation: The use of K-means clustering along with dimensionality reduction techniques like PCA proved effective in segmenting customers based on their purchasing behavior and preferences. The clustering identified a total of three segments.
 2. Feature Engineering : The use of RFM(Recency, Frequency and Monentary) allowed us to establish customer behaviour and preferences.
